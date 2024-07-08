@@ -12,13 +12,13 @@ Welcome to the StudyWithMe project! This React Native application is designed to
 
 ## Installation
 
-### To get started with the Coffee App:
+### To get started with the StudyWithMe App:
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/BharatDas04/StudyWithMe.git
 2. **Go to the Directory:**
    ```sh
-   cd coffee-app:
+   cd StudyWithMe:
 3. **Install dependencies:**
    ```sh
    npm install
