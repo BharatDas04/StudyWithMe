@@ -9,7 +9,7 @@ import { TouchableHighlight } from "react-native-gesture-handler";
 const windowHeight = Dimensions.get("window").height;
 const windowWidth = Dimensions.get("window").width;
 
-function HomeCategory() {
+function HomeCategory({ changeFunc }) {
   const navigation = useNavigation();
   const [showMenu, setShowMenu] = useState(false);
   const [showSub, setShowSub] = useState([]);
@@ -87,9 +87,13 @@ function HomeCategory() {
           >
             <TouchableHighlight
               onPress={() => {
-                navigation.navigate("Search");
+                navigation.navigate("SearchResultPage", {
+                  course: course,
+                  changeFunc: changeFunc,
+                });
               }}
               key={index}
+              underlayColor={"transparent"}
             >
               <Text
                 style={{

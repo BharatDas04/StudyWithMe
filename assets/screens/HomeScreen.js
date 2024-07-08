@@ -9,6 +9,7 @@ import {
   Dimensions,
   ScrollView,
   ActivityIndicator,
+  TouchableOpacity,
 } from "react-native";
 import { useState, useEffect } from "react";
 import { getData } from "../backendFile/fetchSS";
@@ -20,6 +21,9 @@ import AdjFontSize from "../backendFile/AdjFontSize";
 import HomeCategory from "../screens/HomeCategory";
 import RecentLessons from "../screens/RecentLessons";
 import Suggestion from "../screens/Suggestion";
+import Featured from "../screens/Featured";
+import Ytsug from "../screens/Ytsuggesion";
+import ModalSearch from "../screens/ModalSearch";
 
 const windowHeight = Dimensions.get("window").height;
 const windowWidth = Dimensions.get("window").width;
@@ -29,21 +33,34 @@ function HomeScreen({ changeFunc }) {
   const navigation = useNavigation();
   const isFocus = useIsFocused();
   const [isLoading, setIsLoading] = useState(true);
+  const [recentNull, setRecentNull] = useState(false);
+  const [isModalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
     async function signUpValid() {
       const check = await getData("credentials");
-      if (isFocus === true) {
-        if (check === null) {
-          navigation.navigate("SignUpPage");
-        } else {
-          const data = check;
-          setUserData(JSON.parse(data));
-        }
+      if (check === null) {
+        navigation.navigate("SignUpPage");
+      } else {
+        const data = check;
+        setUserData(JSON.parse(data));
       }
     }
-    signUpValid();
-    changeFunc("dark");
+
+    async function recentValid() {
+      const check = await getData("recent");
+      if (check === null) {
+        setRecentNull(false);
+      } else {
+        setRecentNull(true);
+      }
+    }
+
+    if (isFocus === true) {
+      changeFunc("dark");
+      signUpValid();
+      recentValid();
+    }
   }, [isFocus]);
 
   useEffect(() => {
@@ -52,6 +69,10 @@ function HomeScreen({ changeFunc }) {
     }, 1000);
     changeFunc("light");
   }, []);
+
+  const toggleModal = () => {
+    setModalVisible(!isModalVisible);
+  };
 
   return (
     <View style={{ flex: 1 }}>
@@ -68,6 +89,10 @@ function HomeScreen({ changeFunc }) {
           </View>
         ) : (
           <View style={[styles.mainContainer, { marginBottom: "20%" }]}>
+            <ModalSearch
+              isModalVisible={isModalVisible}
+              toggleModal={toggleModal}
+            />
             <View
               style={{
                 flex: 0.3,
@@ -127,6 +152,7 @@ function HomeScreen({ changeFunc }) {
                     placeholder="Type your prefer Learn"
                     placeholderTextColor={"grey"}
                     fontSize={AdjFontSize(0.03)}
+                    onPress={toggleModal}
                   />
                   <TouchableHighlight>
                     <Ionicons name="search" color="grey" size={23} />
@@ -137,15 +163,22 @@ function HomeScreen({ changeFunc }) {
             <View style={{ flex: 0.7 }}>
               <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.items}>
-                  <HomeCategory />
+                  <HomeCategory changeFunc={changeFunc} />
                 </View>
+                {recentNull && (
+                  <View style={styles.items}>
+                    <RecentLessons />
+                  </View>
+                )}
                 <View style={styles.items}>
-                  <RecentLessons />
+                  <Featured />
                 </View>
                 <View style={styles.itemsEx}>
                   <Suggestion />
                 </View>
-                <View style={styles.itemsEx}></View>
+                <View style={styles.items}>
+                  <Ytsug />
+                </View>
               </ScrollView>
             </View>
           </View>

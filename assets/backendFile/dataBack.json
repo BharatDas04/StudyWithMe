@@ -9,7 +9,9 @@
     "ratings": 4.5,
     "NoOfRatings": 120,
     "Level": "Medium",
-    "Description": "Learn the fundamentals of Python programming language from scratch."
+    "Description": "Learn the fundamentals of Python programming language from scratch. This course covers basic syntax, data types, control structures, functions, and more.",
+    "intro": "https://www.youtube.com/watch?v=x7X9w_GIm1s",
+    "main": "https://www.youtube.com/watch?v=kqtD5dpn9C8"
   },
   {
     "id": "2",
@@ -21,7 +23,9 @@
     "ratings": 4.8,
     "NoOfRatings": 150,
     "Level": "Medium",
-    "Description": "Master the art of building web applications using React framework."
+    "Description": "Master the art of building web applications using React framework. This course covers React fundamentals, component-based architecture, state management, and more.",
+    "intro": "https://www.youtube.com/watch?v=Tn6-PIqc4UM",
+    "main": "https://youtu.be/SqcY0GlETPk?si=XWKlLdTLwivc0I-X"
   },
   {
     "id": "3",
@@ -33,7 +37,9 @@
     "ratings": 4.6,
     "NoOfRatings": 100,
     "Level": "Medium",
-    "Description": "Explore the core concepts of data science including data analysis, visualization, and machine learning."
+    "Description": "Explore the core concepts of data science including data analysis, visualization, and machine learning. This course covers statistical analysis, data manipulation, predictive modeling, and more.",
+    "intro": "https://youtu.be/PeMlggyqz0Y?si=WarjJ280eq6c0W72",
+    "main": "https://www.youtube.com/watch?v=bQZk18rke2o"
   },
   {
     "id": "4",
@@ -45,7 +51,9 @@
     "ratings": 4.7,
     "NoOfRatings": 130,
     "Level": "Medium",
-    "Description": "Build cross-platform mobile apps using Google's Flutter framework."
+    "Description": "Build cross-platform mobile apps using Google's Flutter framework. This course covers Flutter basics, UI design, state management, and more.",
+    "intro": "https://www.youtube.com/watch?v=lHhRhPV--G0",
+    "main": "https://www.youtube.com/watch?v=MQ1_wPyVLVc"
   },
   {
     "id": "5",
@@ -57,7 +65,9 @@
     "ratings": 4.6,
     "NoOfRatings": 110,
     "Level": "Medium",
-    "Description": "Learn the basics of graphic design including color theory, typography, and layout."
+    "Description": "Learn the basics of graphic design including color theory, typography, and layout. This course covers design principles, Adobe Photoshop basics, vector graphics, and more.",
+    "intro": "https://www.youtube.com/watch?v=YqQx75OPRa0",
+    "main": "https://www.youtube.com/watch?v=GQS7wPujL2k"
   },
   {
     "id": "6",
@@ -69,7 +79,9 @@
     "ratings": 4.4,
     "NoOfRatings": 90,
     "Level": "Medium",
-    "Description": "Get started with machine learning algorithms and techniques."
+    "Description": "Get started with machine learning algorithms and techniques. This course covers supervised learning, unsupervised learning, regression, classification, and more.",
+    "intro": "https://www.youtube.com/watch?v=ukzFI9rgwfU",
+    "main": "https://www.youtube.com/watch?v=i_LwzRVP7bg"
   },
   {
     "id": "7",
@@ -81,7 +93,9 @@
     "ratings": 4.5,
     "NoOfRatings": 100,
     "Level": "Medium",
-    "Description": "Master the basics of photography including composition, lighting, and exposure."
+    "Description": "Master the basics of photography including composition, lighting, and exposure. This course covers camera settings, exposure triangle, composition rules, and more.",
+    "intro": "https://www.youtube.com/watch?v=hVuTuib65WM",
+    "main": "https://www.youtube.com/watch?v=yhAmMUi2NmM"
   },
   {
     "id": "8",
@@ -93,7 +107,9 @@
     "ratings": 4.7,
     "NoOfRatings": 130,
     "Level": "Medium",
-    "Description": "Create powerful Android apps using Kotlin programming language."
+    "Description": "Create powerful Android apps using Kotlin programming language. This course covers Kotlin syntax, Android Studio, app development lifecycle, and more.",
+    "intro": "https://www.youtube.com/watch?v=xT8oP0wy-A0",
+    "main": "https://www.youtube.com/watch?v=BBWyXo-3JGQ"
   },
   {
     "id": "9",
@@ -105,7 +121,9 @@
     "ratings": 4.6,
     "NoOfRatings": 110,
     "Level": "Medium",
-    "Description": "Understand the fundamentals of cybersecurity and protect against cyber threats."
+    "Description": "Understand the fundamentals of cybersecurity and protect against cyber threats. This course covers network security, cryptography, ethical hacking, and more.",
+    "intro": "https://www.youtube.com/watch?v=inWWhr5tnEA",
+    "main": "https://www.youtube.com/watch?v=4pe1fn3Gus0"
   },
   {
     "id": "10",
@@ -117,7 +135,9 @@
     "ratings": 4.8,
     "NoOfRatings": 120,
     "Level": "Medium",
-    "Description": "Utilize Python for data manipulation, analysis, and visualization."
+    "Description": "Utilize Python for data manipulation, analysis, and visualization. This course covers pandas, NumPy, data cleaning, data visualization libraries, and more.",
+    "intro": "https://www.youtube.com/watch?v=yZvFH7B6gKI",
+    "main": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
   },
   {
     "id": "11",
@@ -129,7 +149,9 @@
     "ratings": 4.6,
     "NoOfRatings": 130,
     "Level": "Medium",
-    "Description": "Learn HTML, CSS, and JavaScript to build modern websites."
+    "Description": "Learn HTML, CSS, and JavaScript to build modern websites. This course covers HTML5, CSS3, responsive design, JavaScript ES6, and more.",
+    "intro": "https://www.youtube.com/watch?v=WG5ikvJ2TKA",
+    "main": "https://www.youtube.com/watch?v=zJSY8tbf_ys"
   },
   {
     "id": "12",
@@ -141,7 +163,9 @@
     "ratings": 4.8,
     "NoOfRatings": 140,
     "Level": "Medium",
-    "Description": "Develop feature-rich iOS apps using Apple's Swift programming language."
+    "Description": "Develop feature-rich iOS apps using Apple's Swift programming language. This course covers Swift basics, UIKit, SwiftUI, app deployment, and more.",
+    "intro": "https://www.youtube.com/watch?v=nAchMctX4YA",
+    "main": "https://www.youtube.com/watch?v=CwA1VWP0Ldw"
   },
   {
     "id": "13",
@@ -153,7 +177,9 @@
     "ratings": 4.7,
     "NoOfRatings": 110,
     "Level": "Medium",
-    "Description": "Understand the working of artificial neural networks and deep learning algorithms."
+    "Description": "Understand the working of artificial neural networks and deep learning algorithms. This course covers perceptrons, feedforward neural networks, backpropagation, and more.",
+    "intro": "https://www.youtube.com/watch?v=bfmFfD2RIcg",
+    "main": "https://www.youtube.com/watch?v=ob1yS9g-Zcs"
   },
   {
     "id": "14",
@@ -165,11 +191,13 @@
     "ratings": 4.5,
     "NoOfRatings": 90,
     "Level": "Medium",
-    "Description": "Master the basics of digital marketing including SEO, SEM, and social media marketing."
+    "Description": "Master the basics of digital marketing including SEO, SEM, and social media marketing. This course covers keyword research, ad campaigns, content marketing strategies, and more.",
+    "intro": "https://www.youtube.com/watch?v=bixR-KIJKYM",
+    "main": "https://www.youtube.com/watch?v=nkNHn0VqVBA"
   },
   {
     "id": "15",
-    "Name": "Introduction to Virtual Reality",
+    "Name": "Introduction to AR/VR",
     "Subject": "Virtual Reality",
     "numberOfLessons": 10,
     "minutes": 500,
@@ -177,7 +205,9 @@
     "ratings": 4.6,
     "NoOfRatings": 80,
     "Level": "Medium",
-    "Description": "Explore the world of virtual reality and immersive technologies."
+    "Description": "Explore the world of virtual reality and immersive technologies. This course covers augmented reality, virtual reality devices, 360-degree videos, and more.",
+    "intro": "https://www.youtube.com/watch?v=vz0UUVDt2ps",
+    "main": "https://www.youtube.com/watch?v=WzfDo2Wpxks"
   },
   {
     "id": "16",
@@ -189,7 +219,9 @@
     "ratings": 4.4,
     "NoOfRatings": 100,
     "Level": "Medium",
-    "Description": "Learn the basics of Java programming language for beginners."
+    "Description": "Learn the basics of Java programming language for beginners. This course covers Java syntax, object-oriented programming principles, data structures, and more.",
+    "intro": "https://www.youtube.com/watch?v=mAtkPQO1FcA",
+    "main": "https://www.youtube.com/watch?v=eIrMbAQSU34"
   },
   {
     "id": "17",
@@ -201,7 +233,9 @@
     "ratings": 4.7,
     "NoOfRatings": 120,
     "Level": "Medium",
-    "Description": "Master the principles of user experience and user interface design."
+    "Description": "Master the principles of user experience and user interface design. This course covers usability, wireframing, prototyping, design thinking, and more.",
+    "intro": "https://www.youtube.com/watch?v=NTmh8l-Xl4c",
+    "main": "https://www.youtube.com/watch?v=Qmhv1_Z7MIA"
   },
   {
     "id": "18",
@@ -213,7 +247,9 @@
     "ratings": 4.6,
     "NoOfRatings": 110,
     "Level": "Medium",
-    "Description": "Explore deep learning algorithms and neural networks."
+    "Description": "Explore deep learning algorithms and neural networks. This course covers convolutional neural networks, recurrent neural networks, deep reinforcement learning, and more.",
+    "intro": "https://www.youtube.com/watch?v=6M5VXKLf4D4",
+    "main": "https://www.youtube.com/watch?v=VyWAvY2CF9c"
   },
   {
     "id": "19",
@@ -225,7 +261,9 @@
     "ratings": 4.5,
     "NoOfRatings": 90,
     "Level": "Medium",
-    "Description": "Learn the basics of cloud computing and popular cloud platforms."
+    "Description": "Learn the basics of cloud computing and popular cloud platforms. This course covers cloud service models, deployment models, AWS, Azure, and more.",
+    "intro": "https://www.youtube.com/watch?v=M988_fsOSWo",
+    "main": "https://www.youtube.com/watch?v=gIWel4gFZaY"
   },
   {
     "id": "20",
@@ -237,6 +275,8 @@
     "ratings": 4.6,
     "NoOfRatings": 130,
     "Level": "Medium",
-    "Description": "Get started with C++ programming language and object-oriented programming concepts."
+    "Description": "Get started with C++ programming language and object-oriented programming concepts. This course covers C++ syntax, classes, inheritance, polymorphism, and more.",
+    "intro": "https://www.youtube.com/watch?v=MNeX4EGtR5Y",
+    "main": "https://www.youtube.com/watch?v=vLnPwxZdW4Y"
   }
 ]

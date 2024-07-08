@@ -1,50 +1,51 @@
+import React from "react";
 import {
   View,
   Text,
-  Image,
-  Dimensions,
-  TouchableOpacity,
   TouchableWithoutFeedback,
+  TouchableOpacity,
+  Dimensions,
+  Image,
 } from "react-native";
-import AdjFontSize from "../backendFile/AdjFontSize";
 import { Ionicons } from "@expo/vector-icons";
-import { useEffect, useState } from "react";
-import { getData, storeData } from "../backendFile/fetchSS";
+import { useNavigation, useIsFocused } from "@react-navigation/native";
 import dataBack from "../backendFile/dataBack.json";
-import { useIsFocused, useNavigation } from "@react-navigation/native";
+import { useState, useEffect } from "react";
+import AdjFontSize from "../backendFile/AdjFontSize";
 
 const windowHeight = Dimensions.get("window").height;
 const windowWidth = Dimensions.get("window").width;
 
-function RecentLessons() {
+function Featured() {
   const navigation = useNavigation();
   const [showMenu, setShowMenu] = useState(false);
   const [recentData, setRecentData] = useState([]);
-  const [dataID, setDataID] = useState(0);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   const isFocus = useIsFocused();
+
   useEffect(() => {
-    async function getRecent() {
-      let a = await getData("recent");
-      setDataID(a);
-      if (a !== null) {
-        const temp = dataBack.find((item) => item.id === a);
-        setRecentData(temp);
-      }
+    async function getRandomItems() {
+      const temp = dataBack.find((item) => item.id === "2");
+      setRecentData(temp);
     }
 
     if (isFocus === true) {
-      getRecent();
+      getRandomItems();
     }
   }, [isFocus]);
+
+  useEffect(() => {
+    console.log(recentData);
+  }, [recentData]);
 
   return (
     <TouchableWithoutFeedback
       onPress={() => {
-        navigation.navigate("Detail", { itemID: dataID });
+        navigation.navigate("Detail", { itemID: recentData.id });
       }}
     >
       <View>
@@ -61,7 +62,7 @@ function RecentLessons() {
               color: "white",
             }}
           >
-            Recent Lessons
+            Featured Course
           </Text>
           <Ionicons
             name="ellipsis-horizontal"
@@ -160,4 +161,4 @@ function RecentLessons() {
   );
 }
 
-export default RecentLessons;
+export default Featured;

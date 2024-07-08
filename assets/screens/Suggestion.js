@@ -99,6 +99,7 @@ function Suggestion() {
                   paddingVertical: windowHeight * 0.03,
                   paddingHorizontal: windowWidth * 0.06,
                   marginHorizontal: windowWidth * 0.03,
+                  width: windowWidth * 0.6,
                 }}
                 key={index}
               >

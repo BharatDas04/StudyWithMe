@@ -12,6 +12,7 @@ import SearchScreen from "./SearchScreen";
 import ProfileScreen from "./ProfileScreen";
 import UnderDev from "./UnderDev";
 import DetailScreen from "./DetailScreen";
+import SearchResultPage from "./SearchResult";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -93,6 +94,11 @@ function NavigationPage({ changeFunc }) {
           <Stack.Screen
             name="Detail"
             component={DetailScreen}
+            initialParams={{ changeFunc }}
+          />
+          <Stack.Screen
+            name="SearchResultPage"
+            component={SearchResultPage}
             initialParams={{ changeFunc }}
           />
         </Stack.Navigator>

@@ -193,6 +193,7 @@ function ProfileScreen({ changeFunc }) {
                 <TouchableWithoutFeedback
                   onPress={() => {
                     clearData("credentials");
+                    clearData("recent");
                     navigation.navigate("Home");
                   }}
                 >
